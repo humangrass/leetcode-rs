@@ -1,4 +1,4 @@
-mod max_consecutive_ones;
+mod max_consecutive_ones_485;
 mod maximum_subarray_53;
 mod majority_element;
 mod jump_game;
