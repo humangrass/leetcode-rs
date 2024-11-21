@@ -1,5 +1,5 @@
 mod max_consecutive_ones;
-mod maximum_subarray;
+mod maximum_subarray_53;
 mod majority_element;
 mod jump_game;
 mod maximum_length_substring_with_two_occurrences;
