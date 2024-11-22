@@ -1,9 +1,6 @@
 # Leetcode Problem Solving
 
-## Topics:
-
-### Arrays and Sliding Window
-
+- [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) --- [solution](src/add_two_numbers_2.rs)
 - [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) --- [solution](src/longest_substring_without_repeating_characters_3.rs)
 - [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) --- [solution](src/maximum_subarray_53.rs)
 - [55. Jump Game](https://leetcode.com/problems/jump-game/) --- [solution](src/jump_game_55.rs)
