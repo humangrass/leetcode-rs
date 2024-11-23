@@ -8,3 +8,4 @@ mod best_time_to_buy_and_sell_stock_121;
 mod move_zeroes_283;
 mod longest_substring_without_repeating_characters_3;
 mod add_two_numbers_2;
+mod longest_palindromic_substring_5;
