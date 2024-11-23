@@ -1,3 +1,4 @@
+mod solution;
 mod max_consecutive_ones_485;
 mod maximum_subarray_53;
 mod majority_element_169;
