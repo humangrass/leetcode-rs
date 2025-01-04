@@ -13,3 +13,4 @@
 | [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)                                                                | [solution](src/max_consecutive_ones_485.rs)                           |
 | [3090. Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/description/) | [solution](src/maximum_length_substring_with_two_occurrences_3090.rs) |
 | [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/) | [solution](src/score_of_string_3110.rs)                               |
+| [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | [solution](src/invert_binary_tree_226.rs)                             |
