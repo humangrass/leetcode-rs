@@ -12,3 +12,4 @@
 | [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)                                                                      | [solution](src/move_zeroes_283.rs)                                    |
 | [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)                                                                | [solution](src/max_consecutive_ones_485.rs)                           |
 | [3090. Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/description/) | [solution](src/maximum_length_substring_with_two_occurrences_3090.rs) |
+| [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/) | [solution](src/score_of_string_3110.rs)                               |
