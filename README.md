@@ -1,5 +1,7 @@
 # Leetcode Problem Solving
 
+[![Clippy + Test](https://github.com/humangrass/leetcode-rs/actions/workflows/rust.yml/badge.svg)](https://github.com/humangrass/leetcode-rs/actions/workflows/rust.yml)
+
 | Problem                                                                                                                                         | Link on solution                                                      |
 |:------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------|
 | [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)                                                                | [solution](src/add_two_numbers_2.rs)                                  |
