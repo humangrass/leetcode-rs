@@ -1,6 +1,7 @@
 use crate::list_node::ListNode;
 use crate::solution::Solution;
 
+#[allow(dead_code)]
 impl Solution {
     /// 206. Reverse Linked List - Best solution - https://leetcode.com/problems/reverse-linked-list/description/
     pub fn reverse_list(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
@@ -15,7 +16,7 @@ impl Solution {
 
     pub fn reverse_list_2(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         match head {
-            Some(mut node) => {
+            Some(node) => {
                 let mut input_vec = node.as_vec();
                 input_vec.reverse();
                 ListNode::from_vec(input_vec)

@@ -3,6 +3,7 @@ use crate::tree::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 
+#[allow(dead_code)]
 impl Solution {
     /// 226. Invert Binary Tree - on-site modification - https://leetcode.com/problems/invert-binary-tree/description/
     pub fn invert_tree_on_site(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {

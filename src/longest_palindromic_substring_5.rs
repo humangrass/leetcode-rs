@@ -1,5 +1,6 @@
 use crate::solution::Solution;
 
+#[allow(dead_code)]
 impl Solution {
     // 5. Longest Palindromic Substring - https://leetcode.com/problems/longest-palindromic-substring/description/
     // O(n²)

@@ -1,36 +1,40 @@
 use crate::list_node::ListNode;
+use crate::solution::Solution;
 
-// 2. Add Two Numbers - https://leetcode.com/problems/add-two-numbers/description/
-pub fn add_two_numbers(
-    l1: Option<Box<ListNode>>,
-    l2: Option<Box<ListNode>>,
-) -> Option<Box<ListNode>> {
-    fn helper(
+#[allow(dead_code)]
+impl Solution {
+    // 2. Add Two Numbers - https://leetcode.com/problems/add-two-numbers/description/
+    pub fn add_two_numbers(
         l1: Option<Box<ListNode>>,
         l2: Option<Box<ListNode>>,
-        from_prev: i32,
     ) -> Option<Box<ListNode>> {
-        if l1.is_none() && l2.is_none() && from_prev == 0 {
-            return None;
+        fn helper(
+            l1: Option<Box<ListNode>>,
+            l2: Option<Box<ListNode>>,
+            from_prev: i32,
+        ) -> Option<Box<ListNode>> {
+            if l1.is_none() && l2.is_none() && from_prev == 0 {
+                return None;
+            }
+
+            let val1 = l1.as_ref().map_or(0, |node| node.val);
+            let val2 = l2.as_ref().map_or(0, |node| node.val);
+
+            let sum = val1 + val2 + from_prev;
+
+            let mut result = ListNode::new(sum % 10);
+            result.next = helper(
+                l1.and_then(|node| node.next),
+                l2.and_then(|node| node.next),
+                // integer division: 18 / 10 = 1
+                sum / 10,
+            );
+
+            Some(Box::new(result))
         }
 
-        let val1 = l1.as_ref().map_or(0, |node| node.val);
-        let val2 = l2.as_ref().map_or(0, |node| node.val);
-
-        let sum = val1 + val2 + from_prev;
-
-        let mut result = ListNode::new(sum % 10);
-        result.next = helper(
-            l1.and_then(|node| node.next),
-            l2.and_then(|node| node.next),
-            // integer division: 18 / 10 = 1
-            sum / 10,
-        );
-
-        Some(Box::new(result))
+        helper(l1, l2, 0)
     }
-
-    helper(l1, l2, 0)
 }
 
 #[cfg(test)]
@@ -43,7 +47,7 @@ mod test {
         let l2 = ListNode::from_vec(vec![5, 6, 4]);
         let res = ListNode::from_vec(vec![7, 0, 8]);
         // 342 + 465 = 807
-        assert_eq!(add_two_numbers(l1, l2), res)
+        assert_eq!(Solution::add_two_numbers(l1, l2), res)
     }
 
     #[test]
@@ -52,7 +56,7 @@ mod test {
         let l2 = ListNode::from_vec(vec![0]);
         let res = ListNode::from_vec(vec![0]);
         // 342 + 465 = 807
-        assert_eq!(add_two_numbers(l1, l2), res)
+        assert_eq!(Solution::add_two_numbers(l1, l2), res)
     }
 
     #[test]
@@ -61,6 +65,6 @@ mod test {
         let l2 = ListNode::from_vec(vec![9, 9, 9, 9]);
         let res = ListNode::from_vec(vec![8, 9, 9, 9, 0, 0, 0, 1]);
         // 9999999 + 9999 = 10009998
-        assert_eq!(add_two_numbers(l1, l2), res)
+        assert_eq!(Solution::add_two_numbers(l1, l2), res)
     }
 }
