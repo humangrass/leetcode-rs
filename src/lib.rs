@@ -13,3 +13,5 @@ mod score_of_string_3110;
 mod invert_binary_tree_226;
 mod tree;
 mod maximum_achievable_number_2769;
+mod reverse_linked_list_206;
+mod list_node;

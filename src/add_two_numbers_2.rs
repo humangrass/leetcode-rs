@@ -1,34 +1,6 @@
+use crate::list_node::ListNode;
+
 // 2. Add Two Numbers - https://leetcode.com/problems/add-two-numbers/description/
-
-// Definition for singly-linked list.
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn new(val: i32) -> Self {
-        ListNode {
-            next: None,
-            val,
-        }
-    }
-
-    pub fn from_vec(values: Vec<i32>) -> Option<Box<ListNode>> {
-        let mut current = None;
-
-        for &value in values.iter().rev() {
-            let mut node = Box::new(ListNode::new(value));
-            node.next = current;
-            current = Some(node);
-        }
-
-        current
-    }
-}
-
 pub fn add_two_numbers(
     l1: Option<Box<ListNode>>,
     l2: Option<Box<ListNode>>,
