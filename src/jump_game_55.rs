@@ -6,7 +6,7 @@ impl Solution {
     pub fn can_jump(nums: Vec<i32>) -> bool {
         let mut jump_size = nums[0];
 
-        for i in 1..nums.len() {
+        for (i, _) in nums.iter().enumerate().skip(1) {
             if i <= (jump_size as usize) {
                 jump_size = std::cmp::max(jump_size, (i as i32) + nums[i])
             }

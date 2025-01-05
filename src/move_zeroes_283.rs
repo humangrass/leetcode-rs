@@ -3,7 +3,7 @@ use crate::solution::Solution;
 #[allow(dead_code)]
 impl Solution {
     // 283. Move Zeroes - https://leetcode.com/problems/move-zeroes/description/
-    pub fn move_zeroes(nums: &mut Vec<i32>) {
+    pub fn move_zeroes(nums: &mut [i32]) {
         let mut index = 0;
         for i in 0..nums.len() {
             if nums[i] != 0 {
@@ -11,8 +11,8 @@ impl Solution {
                 index += 1;
             }
         }
-        for i in index..nums.len() {
-            nums[i] = 0;
+        for num in nums.iter_mut().skip(index) {
+            *num = 0;
         }
     }
 }

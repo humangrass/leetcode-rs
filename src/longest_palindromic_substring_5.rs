@@ -43,10 +43,8 @@ impl Solution {
         for left in 0..s.len() {
             for right in left + 1..=s.len() {
                 let slice = &s[left..right];
-                if is_palindrome(slice) {
-                    if slice.len() > result.len() {
-                        result = slice.to_string();
-                    }
+                if is_palindrome(slice) && slice.len() > result.len() {
+                    result = slice.to_string();
                 }
             }
         }
