@@ -1,5 +1,6 @@
 use crate::solution::Solution;
 
+#[allow(dead_code)]
 impl Solution {
     // 5. Longest Palindromic Substring - https://leetcode.com/problems/longest-palindromic-substring/description/
     // O(n²)
@@ -42,10 +43,8 @@ impl Solution {
         for left in 0..s.len() {
             for right in left + 1..=s.len() {
                 let slice = &s[left..right];
-                if is_palindrome(slice) {
-                    if slice.len() > result.len() {
-                        result = slice.to_string();
-                    }
+                if is_palindrome(slice) && slice.len() > result.len() {
+                    result = slice.to_string();
                 }
             }
         }

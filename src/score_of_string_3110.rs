@@ -1,5 +1,6 @@
 use crate::solution::Solution;
 
+#[allow(dead_code)]
 impl Solution {
     // 3110. Score of a String - https://leetcode.com/problems/score-of-a-string/description/
     pub fn score_of_string(s: String) -> i32 {

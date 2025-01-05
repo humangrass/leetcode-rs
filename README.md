@@ -1,5 +1,7 @@
 # Leetcode Problem Solving
 
+[![Clippy + Test](https://github.com/humangrass/leetcode-rs/actions/workflows/rust.yml/badge.svg)](https://github.com/humangrass/leetcode-rs/actions/workflows/rust.yml)
+
 | Problem                                                                                                                                         | Link on solution                                                      |
 |:------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------|
 | [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)                                                                | [solution](src/add_two_numbers_2.rs)                                  |
@@ -15,4 +17,4 @@
 | [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/)                                                         | [solution](src/score_of_string_3110.rs)                               |
 | [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/)                                                        | [solution](src/invert_binary_tree_226.rs)                             |
 | [2769. Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/description/)                       | [solution](src/maximum_achievable_number_2769.rs)                     |
-| [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)                       | [solution](src/reverse_linked_list_206.rs)                            |
+| [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)                                                      | [solution](src/reverse_linked_list_206.rs)                            |
