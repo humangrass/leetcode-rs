@@ -15,3 +15,4 @@ mod tree;
 mod maximum_achievable_number_2769;
 mod reverse_linked_list_206;
 mod list_node;
+mod permutations_46;
